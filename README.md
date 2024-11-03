@@ -1,8 +1,5 @@
-# React + Vite
+# React Router DOM
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React Router is a library that enables client-side routing in React applications. With React Router, users can experience all of the benefits of a SPA, along with the expected navigational aspects of traditional websites.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![](./public/conditional.png)
