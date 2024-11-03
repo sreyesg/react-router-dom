@@ -16,6 +16,12 @@ const initialState = [
 
 const App = () => {
   const [pokemon, setPokemon] = useState(initialState);
+  const addPokemon = (newPokemonData) => {
+    newPokemonData._id = pokemon.length + 1
+    setPokemon([...pokemon, newPokemonData])
+  }
+  
+  
   return (
     <>
       <h1>Pokemon!</h1>
@@ -28,7 +34,7 @@ const App = () => {
           path='/pokemon/:pokemonId'  
           element={<PokemonDetails pokemon={pokemon} />}
         />
-        <Route path="/pokemon/new" element={<PokemonForm />}/>
+        <Route path="/pokemon/new" element={<PokemonForm addPokemon={addPokemon} />}/>
       </Routes>
       
     </>
