@@ -4,6 +4,7 @@ import PokemonList from './components/PokemonList';
 import NavBar from './components/NavBar';
 import { Route, Routes} from 'react-router-dom'
 import PokemonDetails from './components/PokemonDetails';
+import PokemonForm from './components/PokemonForm';
 
 const initialState = [
   { _id: 1, name: 'bulbasaur', weight: 69, height: 7 },
@@ -27,6 +28,7 @@ const App = () => {
           path='/pokemon/:pokemonId'  
           element={<PokemonDetails pokemon={pokemon} />}
         />
+        <Route path="/pokemon/new" element={<PokemonForm />}/>
       </Routes>
       
     </>
