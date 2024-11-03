@@ -21,6 +21,7 @@ const App = () => {
       <Routes>
         <Route path='/pokemon' element={<PokemonList pokemon={pokemon} />} />
         <Route path='/' element={<h2>Home Page</h2>}/>
+        <Route path='*' element={<h2>Ran out of Pokeballs</h2>} />
       </Routes>
       
     </>
