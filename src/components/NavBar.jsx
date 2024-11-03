@@ -1,9 +1,14 @@
+import { Link } from 'react-router-dom'
 export default function(props){
     return (
         <nav>  
             <ul>
-                <li>Home</li>
-                <li>Pokemon</li>
+                <li>
+                    <Link to='/'>HOME</Link>
+                </li>
+                <li>
+                    <Link to='/pokemon'>Pokemon</Link>
+                </li>
             </ul>
         </nav>
     )
